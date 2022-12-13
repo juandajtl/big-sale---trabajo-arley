@@ -1,0 +1,333 @@
+/* general */
+	:root {
+		--negro--claro--: rgb(36, 36, 36);
+		--negro--oscuro--shadow--: #000000;
+		--blanco--: rgb(250, 250, 250);
+		--blanco--beish--: rgb(247, 247, 226);
+	}
+	
+	* {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		text-decoration: none;
+	}
+
+	body {
+		background-color: var(--blanco--beish--);
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	header {
+		background-color: var(--negro--claro--);
+		color: var(--blanco--);
+		font-size: 120%;
+		width: 100%;
+		height: 80px;
+		display: flex;
+		margin-left: auto;
+		align-items: center;
+		box-shadow: 0 0 15px 0 var(--negro--oscuro--shadow--);
+		min-height: 9vh;
+		position: fixed;
+		z-index: 1;
+	}
+
+	header > h1 {
+		margin-top: 13px;
+		padding: 1% 0;
+		text-indent: 1rem;
+		font-size: 34px;
+		font-family: "Courier New";
+	}
+
+	header a {
+		color: var(--blanco--);
+	}
+
+	.logo {
+		margin: 0 0 5px 40px;
+		width: 80px;
+	}
+
+	.profile {
+		margin: 0 70px 0 0;
+		margin-left: auto;
+	}
+
+	ul,
+	ol {
+		list-style: none;
+	}
+
+	.profile-nav li a {
+		background-color: var(--negro--claro--);
+		color: var(--blanco--);
+		text-decoration: none;
+		padding: 10px 15px;
+		display: block;
+		padding: 10px 15px;
+	}
+
+	.profile-nav > li {
+		float: left;
+	}
+
+	.profile-nav li ul {
+		display: none;
+		position: absolute;
+		min-width: 184px;
+	}
+
+	.profile-nav li a:hover {
+		background-color: var(--blanco--);
+		color: var(--negro--oscuro--shadow--);
+		font-size: 20px;
+	}
+
+	.profile-nav li:hover > ul {
+		display: block;
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 200px;
+	}
+
+	.div {
+		box-shadow: 0 0 15px 0 var(--negro--oscuro--shadow--);
+		background-color: var(--negro--claro--);
+		width: 100%;
+		max-width: 300px;
+		color: var(--blanco--);
+		min-height: 100vh;
+		position: fixed;
+		z-index: 1000px;
+	}
+
+	.a {
+		font-size: 170%;
+		text-align: start;
+		text-indent: 1rem;
+		margin-left: 5px;
+		color: var(--blanco--);
+	}
+
+	.div2 {
+		flex-direction: column;
+		margin-top: 90px;
+		font-size: 12px;
+	}
+
+	.div2 li a:hover {
+		background-color: var(--blanco--);
+		color: var(--negro--oscuro--shadow--);
+		margin-left: 15px;
+		font-size: 22px;
+	}
+
+	.div2 li a {
+		background-color: var(--negro--claro--);
+		color: var(--blanco--);
+		text-decoration: none;
+		display: block;
+		padding: 10px 15px;
+	}
+
+	i {
+		margin: 9px;
+	}
+
+	.container {
+		width: 80%;
+		margin: 100px 50px 0 350px;
+	}
+
+	.hr1 {
+		width: 100%;
+		height: 2px;
+		background-color: var(--negro--claro--);
+		margin:  5px 0 15px 0;
+	}
+
+	.h2 {
+		font-size: 50px;
+	}
+
+	.spam {
+		font-size: 25px;
+		margin-left: 15px;
+		color: var(--negro--claro--);
+	}
+
+	.direccion-pagina{
+	padding: 10px;
+	background-color: var(--negro--claro--);
+	color: var(--blanco--);
+	border-radius: 10px;
+	}
+/* fin general */
+
+/* targeta de productos detallada */
+.container-card-producto-especifico{
+	margin-top: 35px;
+	margin-left: 30px;
+	display: flex;
+
+}
+
+.img-producto-especifico{
+	width: 35%;
+	height: 350px;
+	background-color: var(--blanco--);
+	margin-top: 20px;
+	border: 2px solid var(--negro--claro--);
+}
+
+.card-completa-producto-especifico{
+	width: 57%;
+	height: 390px;
+	margin-left: 30px;
+	border: 2px solid var(--negro--claro--);
+	background-color: var(--blanco--);
+}
+.hr2-producto-especifico {
+	width: 100px;
+	height: 2px;
+	background-color: var(--negro--claro--);
+  	margin:  5px 0 15px 0;
+}
+/* targeta de productos detallada */
+
+/* targetas de productos */
+
+.container-subastas{
+	width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+	
+}
+
+.container-subastas .card-subastas{
+    width: 298px;
+    height: 390px;
+    border-radius: 8px;
+    box-shadow:  0 2px 2px var(--negro--oscuro--shadow--);
+	overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-subastas .card-subastas:hover{
+    transform:  translateY(-15px);
+    box-shadow: 0 12px 16px var(--negro--oscuro--shadow--);
+}
+
+.container-subastas .card-subastas img{
+    width: 100%;
+    height: 220px;
+}
+.container-subastas .card-subastas h4{
+    font-weight: 600;
+}
+.container-subastas .card-subastas p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-subastas .card-subastas a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+/* targetas de productos */
+
+/* consola */  
+  .container-consola {
+	display: flex;
+	flex-direction: row;
+	text-align: end;
+	justify-content: center;
+	align-items: center;
+  }
+  .tarjet {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin: 10px;
+	padding: 10px;
+	height: 120px;
+	background-color: #01367c;
+  }
+  
+  .detalles {
+	text-align: end;
+	background-color: var(--blanco--beish--);
+	text-align: start;
+	padding: 10px;
+	height: 40px;
+	width: 200px;
+	color: blue;
+  }
+  
+  .parrafo{
+	margin-top: auto;
+	color: var(--blanco--);
+	font-size: x-large;
+  }
+/* fin consola */
+
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	height: 400px;
+	padding: 30px;
+	width:auto;
+	height: 91vh;
+  }
+  
+  #login {
+	padding: 10px;
+	color: #fff;
+	background-color: #0098cb;
+	width: 320px;
+	margin: 20px auto;
+	border: 0;
+	border-radius: 3px;
+	transition: background-color .5s;
+  }
+  #login:hover {
+	background-color: #eb0000;
+  }
+  
+  
+  
+  #signup{
+	padding: 10px;
+	color: #fff;
+	background: #0098cb;
+	width: 320px;
+	margin: 20px auto;
+	margin-top: 0;
+	border: 0;
+	border-radius: 3px;
+	transition: background-color .5s;
+  }
+  #signup:hover {
+	background-color: #eb0000;
+  }
+  
